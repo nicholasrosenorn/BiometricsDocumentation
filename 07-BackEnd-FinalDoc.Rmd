@@ -1,9 +1,11 @@
-# Creation of Dummy Data
+# Back End Team
 
-## Why do we need dummy data?
+## Creation of Dummy Data
+
+### Why do we need dummy data?
 In order to effectively test the functionality of the backend code, a lot of pre-existing data is needed to fill the database to simulate a normal functioning environment for the app. Initially, we only had about 40 users' data, and it was not enough. Therefore, we decided to create fake user data based on pre-existing user data (dummy data).
 
-## How we generated dummy data?
+### How we generated dummy data?
 In order to let dummy data make sense and follow pre-existing data's patterns, we studied the patterns of each pre-existing data category. There are active, basal, dist, elev, heart, and steps data. We mostly used user 185 and 186's dataset as the reference while creating dummy dataset. 
 
 For the active data, we first calculated the mean value of the original data. Then we found out the number of data points above the mean. Because it can be observed that within each active data set, data points above the mean value cluster into three group, and one of them always starts at the beginning. Therefore, we also chose the start as the position of the first high value data cluster, and randomly chose position for the other two. The value of each data point was chosen based on the observed range of the reference data point. 
@@ -24,21 +26,21 @@ For Heart data:
 For Steps data:  
 ![](./images/Steps Data.JPG){width=50%}<br/>
 
-## How to run the scripts?
+### How to run the scripts?
 In order to run the scripts, some modifications to the GenerateFakeData.py are needed. There are three parameters that need modification: folder_name_list, real_name_list, and path. "folder_name_list" tells the name of the folders that will contain the dummy data. "real_name_list" tells the name of the reference files being used to generate dummy data. "path" is the current directory. Once these three parameters are set up correctly, just directly run the GenerateFakeData.py script with no input.
 
-## Potential improvements
+### Potential improvements
 Because our dummy data generation script is specifically modified for each data set, if in the future a new type of data appears, we need to rewrite our code in order to accommodate the new data type. Therefore, we can improve our code by applying more statictical knowledge so that the code can be applied to generate dummy data from more different data types.
 
-# Creating a connection between API Endpoints
+## Creating a connection between API Endpoints
 
-## List of API end-points:
+### List of API end-points:
 
 1. Front-End Patient User input to the database
 2. Biometric Data from the FitBit API to the database
 3. Data from the database to the RShiny Dashboard for visualization
 
-## What framework we are going to use?
+### What framework we are going to use?
 
 We are currently looking to use the framework Express.js to write the routes between the database and various API endpoints.
 
@@ -53,13 +55,13 @@ At times writing code from scratch for above things can be time consuming. But b
 
 [Link to set up Node](https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9)
 
-## Setting up SQL database connection:
+### Setting up SQL database connection:
 
 We created a connection with the MariaDB database in our Node Rest API server to be able to send and receive data. The following link shows a tutorial on how we set up the connection.
 
 [Link to setup SQL connection in Node](https://bezkoder.com/node-js-rest-api-express-mysql/)
 
-## Design of the Routes
+### Design of the Routes
 
 There are five kinds of routes:
 
@@ -73,16 +75,16 @@ There are five kinds of routes:
 
 **PATCH**: The PATCH method applies partial modifications to a resource
 
-# Hosting the database on a Server
+## Hosting the database on a Server
 
-## Issues faced with hosting a database on Scholar:
+### Issues faced with hosting a database on Scholar:
 
 1. Scholar is a small computer cluster, suitable for classroom learning about high performance computing (HPC). 
 2. It can be accessed as a typical cluster, with a job scheduler distributing batch jobs onto its worker nodes, or as an interactive resource, with software packages available through a desktop-like environment on its login servers.
 3. We tried to create a connection to the sql server hosted on this server from our local but we faced issues because there was a firewall preventing access to the database from a foreign  server
 4. We tried running our Backend API on scholar but we were unable to install NodeJS, MySQLWorkbench and other packages on the server without authorization.
 
-## Work around
+### Work around
 
 1. In order to install packages on scholar, we are expected to make requests to the administration with a list of all program lines to run in the form of a SLURM job.
 
@@ -92,7 +94,7 @@ There are five kinds of routes:
 
 More info can be found at the following link: [SLURM Job](https://www.rcac.purdue.edu/knowledge/weber/run/slurm)
 
-## How we proceeded
+### How we proceeded
 
 Since we have to make a request each time we have to install a package, we decided to make just one request with a complete list of all installation. As a result, we wanted to host a temporary database on AWS that we can connect to and test on using our local machine.
 
@@ -102,14 +104,14 @@ We created a copy of the entire database on AWS with the following credentials:
 - Username: cb3i17t0aqn6a4ff
 - Password: e2l4k9zn24shcj42
 
-# Adding data to the database
+## Adding data to the database
 
-## Adding a CSV to the database
+### Adding a CSV to the database
 
 1. The data engineering team had made a script that creates a CSV file with all the users FitBit data when they make a request to the API
 2. We decided to make a python script to load this csv data onto the database we hosted on AWS.
 
-## POST information
+### POST information
 
 1. The JSON to add a datapoint to the database is as follows:
 ```text
@@ -139,7 +141,7 @@ We created a copy of the entire database on AWS with the following credentials:
 
 2. We made structures in this form by reading the CSV information into a pandas dataframe and made a post request to our API
 
-## Patient information and Study Specific Data
+### Patient information and Study Specific Data
 
 The patient information is sent to the database form a webpage which will be used by Merck Scientists to load the patients they are studying during a clinical trial.
 
@@ -167,7 +169,7 @@ The JSON for the study data is as follows:
 }
 ```
 
-# Firebase and Login System for the Phone App
+## Firebase and Login System for the Phone App
 
 (This part is also in frontend team's documentation, because it is relavant to both of the teams)
 Because our app’s users are patients and their information is very confidential, It is important to implement our login and authentication system securely. Instead of building a secure login system from scratch by ourselves, we chose to use a pre-existing login authentication solution--firebase. In firebase, users’ passwords are first encrypted and then stored. Even if hackers successfully gain access to firebase’s database, they still would not know the passwords because everything stored there is the encrypted version. 

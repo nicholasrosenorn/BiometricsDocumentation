@@ -1,13 +1,13 @@
-#Data Architects
+# Data Architects
 
-##Background
+## Background
 
 What is a database?
 
 A database is an organized collection of data stored electronically. It is typically controlled by a database management system (DBMS). There are two main categories a database can fall into: relational and non-relational. A relational database is one that stores data in rows and columns, otherwise known as a table. While a simple database may include only one table, a typical functional database contains multiple tables. These tables are linked to each other using keys. A primary key is a unique identifier and is referenced by other tables. When in another table, it is considered a foreign key. While it is not necessary, it is common practice to include a primary key in every table. Nearly all relational databases rely on the programming language SQL (Structured Query Language) to query, manipulate, and define data, as well as proved access control. 
 The term “non-relational database” is a blanket term for all other databases that do not rely on SQL, hence their other name, NoSQL. These databases can take on many forms: key-value store, document store, column-oriented databases, and graph databases, to name a few.
 
-##Database Design
+## Database Design
 
 Designing a relational database is straightforward. First, the data that will go into the database must be known, along with the datatypes. Next, an entity relationship diagram (ERD) should be constructed. This will help keep the design of the database organized. There are plenty of excellent free tools on the internet that help with design and construction. Lucidchart is one of these tools. Lucidchart allows one to design an ERD and then export it as an SQL script! This can be handy, especially when first starting out with SQL. 
 Below is the ERD for the current (at the time of writing this) working database. PK stands for primary key, and FK stands for foreign key. This ERD includes the datatypes as well, which is necessary for properly creating a database. 
@@ -17,8 +17,8 @@ Below is the ERD for the current (at the time of writing this) working database.
 Database Creation with SQL
 Exporting the ERD above results in the following SQL code:
 
-![](./images/a1.png){width=50%}
-![](./images/a2.png){width=50%}
+![](./images/a1.png){width=40%}
+![](./images/a2.png){width=40%}
 
 However, this code lacks a few required pieces. The foreign keys did not populate, and the primary keys do not reference the other tables. We also have not “created” a database yet, nor told our program which database to use. These issues are fixed in the following code snippet, along with some syntax changes. These syntax changes were necessary because the server our database is hosted on has some requirements that are not very important (at least not right now). 
 
@@ -30,13 +30,13 @@ The following snippets are useful commands for handling the database.
 
 ![](./images/a6.png){width=50%}
 
-##Database Creation with Neo4j
+## Database Creation with Neo4j
 
-###Neo4j Background 
+### Neo4j Background 
 
 Neo4j is a graph database created by Neo4j inc. Neo4j is implemented in Java; however, it can also be written with any other cypher query language. 
 
-##Code
+## Code
 
 This creates the first two nodes. The yellow highlight section would be the user node. The green highlight section shows the relationship between the two nodes. The orange highlight section shows the other node which would be the username. The light blue highlighted section returns and stores the two nodes into the system. 
 
