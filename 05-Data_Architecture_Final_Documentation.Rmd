@@ -291,7 +291,7 @@ Make sure to replace the host name with the correct one that connects to the AWS
 
 A key part of loading dummy data into mySQL is looking at the table columns. The first step in the process is finding dummy data and formatting this into a CSV file. After this it’s important to make sure the dummy data columns align with the column values in the database. For example we had to change a couple of columns in the database such as floors climbed to keep the data collected by the database accurate. The lines we used to load the dummy data into the apple watch table and fitbit data below:
 
-```{r, eval = False}
+```{r, eval = FALSE}
 load data local infile "fitbit.csv" into table Fitbit_Data
 FIELDS TERMINATED BY ',' 
 	 lines terminated by '\n'
