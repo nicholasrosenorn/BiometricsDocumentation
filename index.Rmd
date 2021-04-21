@@ -13,3 +13,52 @@ description: "A book for documenting the Merck-Data Mine team's work."
 # Introduction {#introduction}
 
 This book will serve as tutorial based documentation for the Merck - Data Mine Coporate Partnership team for the 2020-2021 academic year.
+
+## Team Contacts
+
+Mentors:
+
+Terri Bui - yen.bui@merck.com
+Kai Bode - kai.bode@merck.com
+
+TA: 
+
+Nick Rosenorn -	nrosenor@purdue.edu
+
+Data Engineers:
+
+Joshua Kosnoff - jkosnoff@purdue.edu
+Allison	Hill - hill363@purdue.edu
+Karthik	Ravishankar - kravish@purdue.edu
+Pranav Anandarao - panandar@purdue.edu
+Eric Yap - eyap@purdue.edu
+Jennifer Leising - reagin@purdue.edu
+
+Data Architects:
+
+Connor Koelsch - ckoelsch@purdue.edu
+Judy Si	- si12@purdue.edu
+Denae Galloway - gallowd@purdue.edu
+Praveen	Sentha - psentha@purdue.edu
+Riya Mogli - rmogli@Purdue.edu
+
+Data Visualization Developers:
+
+Surya	Suresh - suresh49@purdue.edu
+Priyanka	Seth - seth4@purdue.edu
+Sharon Patta - spatta@purdue.edu
+Ahmed Ashraf Butt - butt5@purdue.edu
+
+Front End Engineers:
+
+Alex Leung - leung49@purdue.edu
+Dania	Khan - khan286@purdue.edu
+Patricia Madalena Magalhaes Casaca - pmagalha@purdue.edu
+
+Full Stack Engineers:
+
+Siddharth	Srinivasan - sriniv75@purdue.edu
+Xin	Du - du201@purdue.edu
+Connor Koelsch - ckoelsch@purdue.edu
+Abhimanyu	Agarwal - agarw184@purdue.edu
+Anav Sharma	- sharm468@purdue.edu
