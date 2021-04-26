@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.26)  26 APR 2021 13:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.26)  26 APR 2021 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,729 +1596,27 @@ File: ./phone_app_doc_images/questionnaire_page.JPG Graphic file (type bmp)
 <./phone_app_doc_images/questionnaire_page.JPG>
 File: ./phone_app_doc_images/entries_page.JPG Graphic file (type bmp)
 <./phone_app_doc_images/entries_page.JPG>
+File: ./phone_app_doc_images/api_table_one.JPG Graphic file (type bmp)
+<./phone_app_doc_images/api_table_one.JPG>
+File: ./phone_app_doc_images/api_table_two.JPG Graphic file (type bmp)
+<./phone_app_doc_images/api_table_two.JPG>
 
-Overfull \hbox (14.81084pt too wide) in paragraph at lines 4248--4250
- []|\TU/lmr/m/n/10 Purpose|
+Underfull \hbox (badness 10000) in paragraph at lines 4238--4240
+[]
  []
 
 
-Overfull \hbox (10.14084pt too wide) in paragraph at lines 4250--4252
- []|\TU/lmr/m/n/10 Special
- []
-
-
-Overfull \hbox (4.07085pt too wide) in paragraph at lines 4250--4252
- \TU/lmr/m/n/10 Notes|
- []
-
-
-Overfull \hbox (18.65085pt too wide) in paragraph at lines 4252--4254
- []|\TU/lmr/m/n/10 Frontend
- []
-
-
-Overfull \hbox (16.27084pt too wide) in paragraph at lines 4252--4254
- \TU/lmr/m/n/10 Progress|
- []
-
-
-Overfull \hbox (16.10085pt too wide) in paragraph at lines 4254--4256
- []|\TU/lmr/m/n/10 Backend
- []
-
-
-Overfull \hbox (16.27084pt too wide) in paragraph at lines 4254--4256
- \TU/lmr/m/n/10 Progress|
- []
-
-
-Overfull \hbox (1.19823pt too wide) in alignment at lines 4238--4258
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (16.7517pt too wide) in paragraph at lines 4259--4261
-\TU/lmr/m/n/10 questionnaire|  
- []
-
-
-Overfull \hbox (9.60832pt too wide) in paragraph at lines 4263--4268
- []|\TU/lmr/m/n/10 {patient_id:
- []
-
-
-Overfull \hbox (20.26833pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 hours_worked:
- []
-
-
-Overfull \hbox (32.53831pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 usual_symptoms:
- []
-
-
-Overfull \hbox (10.99832pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 tion_timing:
- []
-
-
-Overfull \hbox (9.32832pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 ing_alcohol:
- []
-
-
-Overfull \hbox (36.01833pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 other_medication:
- []
-
-
-Overfull \hbox (4.06831pt too wide) in paragraph at lines 4263--4268
- \TU/lmr/m/n/10 ter_intake:
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4270--4272
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (4.35085pt too wide) in paragraph at lines 4270--4272
- \TU/lmr/m/n/10 Ques-
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4270--4272
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (2.08084pt too wide) in paragraph at lines 4270--4272
- \TU/lmr/m/n/10 when
- []
-
-
-Overfull \hbox (37.45085pt too wide) in paragraph at lines 4270--4272
- \TU/lmr/m/n/10 questionnaire|
- []
-
-
-Overfull \hbox (14.58084pt too wide) in paragraph at lines 4272--4276
- []|\TU/lmr/m/n/10 backend
- []
-
-
-Overfull \hbox (25.42084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 put_date”
- []
-
-
-Overfull \hbox (3.80084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 based
- []
-
-
-Overfull \hbox (2.08084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 when
- []
-
-
-Overfull \hbox (4.34085pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 ceives
- []
-
-
-Overfull \hbox (25.42084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 put_date”
- []
-
-
-Overfull \hbox (1.53084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 umn.
- []
-
-
-Overfull \hbox (2.09085pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 thing
- []
-
-
-Overfull \hbox (55.99084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 phone_app_data
- []
-
-
-Overfull \hbox (0.97084pt too wide) in paragraph at lines 4272--4276
- \TU/lmr/m/n/10 table|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4276--4278
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (2.36084pt too wide) in paragraph at lines 4278--4280
- []|\TU/lmr/m/n/10 Anav
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4278--4280
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4289--4293
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.24084pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 needs
- []
-
-
-Overfull \hbox (0.97084pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 load-
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (7.74084pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 server.
- []
-
-
-Overfull \hbox (4.96085pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 server
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (3.46085pt too wide) in paragraph at lines 4289--4293
- \TU/lmr/m/n/10 Ama-
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4295--4297
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4297--4299
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (11.06831pt too wide) in paragraph at lines 4304--4308
- []|\TU/lmr/m/n/10 {first_name:
- []
-
-
-Overfull \hbox (4.36832pt too wide) in paragraph at lines 4304--4308
- \TU/lmr/m/n/10 last_name:
- []
-
-
-Overfull \hbox (21.58832pt too wide) in paragraph at lines 4304--4308
- \TU/lmr/m/n/10 date_of_birth:
- []
-
-
-Overfull \hbox (5.14832pt too wide) in paragraph at lines 4304--4308
- \TU/lmr/m/n/10 height_cm:
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4310--4312
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.47084pt too wide) in paragraph at lines 4310--4312
- \TU/lmr/m/n/10 count
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4310--4312
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (5.14084pt too wide) in paragraph at lines 4310--4312
- \TU/lmr/m/n/10 When
- []
-
-
-Overfull \hbox (12.91084pt too wide) in paragraph at lines 4310--4312
- \TU/lmr/m/n/10 account|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4314--4316
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4316--4318
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (18.33168pt too wide) in paragraph at lines 4319--4321
-\TU/lmr/m/n/10 account/login|  
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4327--4329
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4327--4329
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (5.14084pt too wide) in paragraph at lines 4327--4329
- \TU/lmr/m/n/10 When
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4331--4333
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4333--4335
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (47.2217pt too wide) in paragraph at lines 4336--4338
-\TU/lmr/m/n/10 account/{patientId}|  
- []
-
-
-Overfull \hbox (11.06831pt too wide) in paragraph at lines 4340--4344
- []|\TU/lmr/m/n/10 {first_name:
- []
-
-
-Overfull \hbox (4.36832pt too wide) in paragraph at lines 4340--4344
- \TU/lmr/m/n/10 last_name:
- []
-
-
-Overfull \hbox (21.58832pt too wide) in paragraph at lines 4340--4344
- \TU/lmr/m/n/10 date_of_birth:
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4346--4349
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4346--4349
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (1.80084pt too wide) in paragraph at lines 4346--4349
- \TU/lmr/m/n/10 mod-
- []
-
-
-Overfull \hbox (0.97084pt too wide) in paragraph at lines 4346--4349
- \TU/lmr/m/n/10 table|
- []
-
-
-Overfull \hbox (21.52084pt too wide) in paragraph at lines 4351--4353
- \TU/lmr/m/n/10 (complet)|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4353--4355
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (47.2217pt too wide) in paragraph at lines 4356--4358
-\TU/lmr/m/n/10 account/{patientId}|  
- []
-
-
-Overfull \hbox (6.16022pt too wide) in paragraph at lines 4362--4366
- []|\TU/lmr/m/n/10 {patient_id: 
- []
-
-
-Overfull \hbox (2.62021pt too wide) in paragraph at lines 4362--4366
- \TU/lmr/m/n/10 first_name: 
- []
-
-
-Overfull \hbox (0.92021pt too wide) in paragraph at lines 4362--4366
- \TU/lmr/m/n/10 last_name: 
- []
-
-
-Overfull \hbox (18.14021pt too wide) in paragraph at lines 4362--4366
- \TU/lmr/m/n/10 date_of_birth: 
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4366--4369
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4366--4369
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (4.96085pt too wide) in paragraph at lines 4366--4369
- \TU/lmr/m/n/10 server
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4366--4369
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (3.80084pt too wide) in paragraph at lines 4366--4369
- \TU/lmr/m/n/10 based
- []
-
-
-Overfull \hbox (2.08084pt too wide) in paragraph at lines 4366--4369
- \TU/lmr/m/n/10 given
- []
-
-
-Overfull \hbox (0.74084pt too wide) in paragraph at lines 4369--4371
- []|\TU/lmr/m/n/10 Used
- []
-
-
-Overfull \hbox (3.47084pt too wide) in paragraph at lines 4369--4371
- \TU/lmr/m/n/10 count
- []
-
-
-Overfull \hbox (21.52084pt too wide) in paragraph at lines 4371--4373
- \TU/lmr/m/n/10 (complet)|
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4373--4375
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (16.7517pt too wide) in paragraph at lines 4376--4378
-\TU/lmr/m/n/10 questionnaire|  
- []
-
-
-Overfull \hbox (9.22021pt too wide) in paragraph at lines 4382--4384
- []|\TU/lmr/m/n/10 {input_date: 
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4384--4387
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (1.24084pt too wide) in paragraph at lines 4384--4387
- \TU/lmr/m/n/10 View
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4384--4387
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (4.96085pt too wide) in paragraph at lines 4384--4387
- \TU/lmr/m/n/10 server
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4384--4387
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (10.14084pt too wide) in paragraph at lines 4384--4387
- \TU/lmr/m/n/10 patient|
- []
-
-
-Overfull \hbox (0.74084pt too wide) in paragraph at lines 4387--4389
- []|\TU/lmr/m/n/10 Used
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4389--4391
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (2.36084pt too wide) in paragraph at lines 4391--4393
- []|\TU/lmr/m/n/10 Anav
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4391--4393
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (16.7517pt too wide) in paragraph at lines 4394--4396
-\TU/lmr/m/n/10 questionnaire|  
- []
-
-
-Overfull \hbox (49.31831pt too wide) in paragraph at lines 4398--4400
- \TU/lmr/m/n/10 ?patientId&dateTime|
- []
-
-
-Overfull \hbox (6.16022pt too wide) in paragraph at lines 4400--4405
- []|\TU/lmr/m/n/10 {patient_id: 
- []
-
-
-Overfull \hbox (16.82022pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 hours_worked: 
- []
-
-
-Overfull \hbox (29.09021pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 usual_symptoms: 
- []
-
-
-Overfull \hbox (7.55022pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 tion_timing: 
- []
-
-
-Overfull \hbox (5.88022pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 ing_alcohol: 
- []
-
-
-Overfull \hbox (32.57022pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 other_medication: 
- []
-
-
-Overfull \hbox (0.62021pt too wide) in paragraph at lines 4400--4405
- \TU/lmr/m/n/10 ter_intake: 
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4405--4408
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4405--4408
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (4.96085pt too wide) in paragraph at lines 4405--4408
- \TU/lmr/m/n/10 server
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4405--4408
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (1.29085pt too wide) in paragraph at lines 4405--4408
- \TU/lmr/m/n/10 spec-
- []
-
-
-Overfull \hbox (2.11084pt too wide) in paragraph at lines 4405--4408
- \TU/lmr/m/n/10 entry|
- []
-
-
-Overfull \hbox (0.74084pt too wide) in paragraph at lines 4408--4410
- []|\TU/lmr/m/n/10 Used
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4410--4412
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (2.36084pt too wide) in paragraph at lines 4412--4414
- []|\TU/lmr/m/n/10 Anav
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4412--4414
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (16.7517pt too wide) in paragraph at lines 4415--4417
-\TU/lmr/m/n/10 questionnaire|  
- []
-
-
-Overfull \hbox (17.64832pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 tId&dateTime
- []
-
-
-Overfull \hbox (20.26833pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 hours_worked:
- []
-
-
-Overfull \hbox (32.53831pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 usual_symptoms:
- []
-
-
-Overfull \hbox (10.99832pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 tion_timing:
- []
-
-
-Overfull \hbox (9.32832pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 ing_alcohol:
- []
-
-
-Overfull \hbox (36.01833pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 other_medication:
- []
-
-
-Overfull \hbox (4.06831pt too wide) in paragraph at lines 4419--4425
- \TU/lmr/m/n/10 ter_intake:
- []
-
-
-Overfull \hbox (2.69084pt too wide) in paragraph at lines 4427--4430
- []|\TU/lmr/m/n/10 (used
- []
-
-
-Overfull \hbox (3.19084pt too wide) in paragraph at lines 4427--4430
- \TU/lmr/m/n/10 page)
- []
-
-
-Overfull \hbox (4.96085pt too wide) in paragraph at lines 4427--4430
- \TU/lmr/m/n/10 server
- []
-
-
-Overfull \hbox (2.74084pt too wide) in paragraph at lines 4427--4430
- \TU/lmr/m/n/10 sends
- []
-
-
-Overfull \hbox (1.29085pt too wide) in paragraph at lines 4427--4430
- \TU/lmr/m/n/10 spec-
- []
-
-
-Overfull \hbox (2.11084pt too wide) in paragraph at lines 4427--4430
- \TU/lmr/m/n/10 entry|
- []
-
-
-Overfull \hbox (0.74084pt too wide) in paragraph at lines 4430--4432
- []|\TU/lmr/m/n/10 Used
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4432--4434
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (2.36084pt too wide) in paragraph at lines 4434--4436
- []|\TU/lmr/m/n/10 Anav
- []
-
-
-Overfull \hbox (25.96085pt too wide) in paragraph at lines 4434--4436
- \TU/lmr/m/n/10 (complete)|
- []
-
-
-Overfull \hbox (1.19823pt too wide) in alignment at lines 4258--4438
- [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (172.21126pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
- BACKEND COMMUNICATE) \TU/lmr/m/n/10 105
- []
-
-[105] [106]
-Overfull \hbox (172.21126pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
- BACKEND COMMUNICATE) \TU/lmr/m/n/10 107
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[107] [108]
+[105] [106] [107] [108]
 Overfull \hbox (172.21126pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
  BACKEND COMMUNICATE) \TU/lmr/m/n/10 109
  []
 
-[109] [110]
-Overfull \hbox (172.21126pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
- BACKEND COMMUNICATE) \TU/lmr/m/n/10 111
- []
-
-[111] [112]
-Overfull \hbox (172.21126pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
- BACKEND COMMUNICATE) \TU/lmr/m/n/10 113
- []
-
-[113] [114]
-Overfull \hbox (172.21126pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 11.4.  4. API ENDPOINTS (HOW APPLICATION’S FRONTEND AND NODE.JS
- BACKEND COMMUNICATE) \TU/lmr/m/n/10 115
- []
-
-[115]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[116]
+[109]
 File: ./images/Active Data.JPG Graphic file (type bmp)
 <./images/Active Data.JPG>
-[117]
 File: ./phone_app_doc_images/BasalData.png Graphic file (type bmp)
 <./phone_app_doc_images/BasalData.png>
 File: ./phone_app_doc_images/DistData.JPG Graphic file (type bmp)
@@ -2330,60 +1628,63 @@ File: ./phone_app_doc_images/HeartData.JPG Graphic file (type bmp)
 File: ./phone_app_doc_images/StepsData.JPG Graphic file (type bmp)
 <./phone_app_doc_images/StepsData.JPG>
 
-Underfull \hbox (badness 10000) in paragraph at lines 4490--4496
+Underfull \hbox (badness 10000) in paragraph at lines 4291--4297
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4490--4496
+Underfull \hbox (badness 10000) in paragraph at lines 4291--4297
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4490--4496
+Underfull \hbox (badness 10000) in paragraph at lines 4291--4297
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[118]
+[110]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[119]
+[111]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[120] [121] [122]
-Overfull \hbox (1.58502pt too wide) in paragraph at lines 4662--4664
+[112]
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+[113] [114] [115]
+Overfull \hbox (1.58502pt too wide) in paragraph at lines 4463--4465
 []\TU/lmr/m/n/10 Hostname: rnr56s6e2uk326pj.cbetxkdyhwsb.us-east-1.rds.amazonaw
 s.com 
  []
 
-[123]
-Overfull \hbox (21.25pt too wide) in paragraph at lines 4716--4716
+
+Overfull \hbox (21.25pt too wide) in paragraph at lines 4517--4517
  []       \TU/lmtt/m/n/10 'moderately_active_miles': row["Moderately Active Mil
 es"],[] 
  []
 
 
-Overfull \hbox (10.75pt too wide) in paragraph at lines 4716--4716
+Overfull \hbox (10.75pt too wide) in paragraph at lines 4517--4517
  []       \TU/lmtt/m/n/10 'lightly_active_minutes': row["Lightly Active Minutes
 "],[] 
  []
 
 
-Overfull \hbox (0.25pt too wide) in paragraph at lines 4716--4716
+Overfull \hbox (0.25pt too wide) in paragraph at lines 4517--4517
  []       \TU/lmtt/m/n/10 'fairly_active_minutes': row["Fairly Active Minutes"]
 ,[] 
  []
 
-
-Overfull \hbox (5.5pt too wide) in paragraph at lines 4716--4716
+[116]
+Overfull \hbox (5.5pt too wide) in paragraph at lines 4517--4517
  []       \TU/lmtt/m/n/10 'average_resting_heartrate': row["Average Resting HR"
 ],[] 
  []
 
-[124] [125] [126
+[117] [118
 
 ]
 Chapter 12.
@@ -2391,34 +1692,34 @@ File: images/project_overview.png Graphic file (type bmp)
 <images/project_overview.png>
 File: images/page1_001.jpg Graphic file (type bmp)
 <images/page1_001.jpg>
-[127] [128] [129] [130]
+[119] [120] [121] [122]
 File: images/mobile_signin.png Graphic file (type bmp)
 <images/mobile_signin.png>
-[131]
+[123]
 File: images/mobile_prototype.png Graphic file (type bmp)
 <images/mobile_prototype.png>
-[132] [133] [134]
+[124] [125] [126]
 
-Package natbib Warning: Citation `website.com' on page 135 undefined on input l
-ine 5006.
-
-
-Package natbib Warning: Citation `website.org' on page 135 undefined on input l
-ine 5007.
-
-[135]
-
-Package natbib Warning: Citation `app.route' on page 136 undefined on input lin
-e 5041.
+Package natbib Warning: Citation `website.com' on page 127 undefined on input l
+ine 4807.
 
 
-Package natbib Warning: Citation `login_required' on page 136 undefined on inpu
-t line 5047.
+Package natbib Warning: Citation `website.org' on page 127 undefined on input l
+ine 4808.
 
-[136]
+[127]
+
+Package natbib Warning: Citation `app.route' on page 128 undefined on input lin
+e 4842.
+
+
+Package natbib Warning: Citation `login_required' on page 128 undefined on inpu
+t line 4848.
+
+[128]
 File: images/Create_account_page.png Graphic file (type bmp)
 <images/Create_account_page.png>
-[137]
+[129]
 File: images/Sign_in_page.png Graphic file (type bmp)
 <images/Sign_in_page.png>
 File: images/home_page.png Graphic file (type bmp)
@@ -2429,16 +1730,16 @@ File: images/Patients_gallery_page.png Graphic file (type bmp)
 <images/Patients_gallery_page.png>
 File: images/Information_page.png Graphic file (type bmp)
 <images/Information_page.png>
-[138] [139]
+[130] [131]
 File: images/Fitbit_page.png Graphic file (type bmp)
 <images/Fitbit_page.png>
 File: images/file_structure.jpg Graphic file (type bmp)
 <images/file_structure.jpg>
-[140] [141]
+[132] [133]
 
 Package natbib Warning: There were undefined citations.
 
-[142] (./bookdown-demo.aux)
+[134] (./bookdown-demo.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2446,12 +1747,12 @@ Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
 (rerunfilecheck)             Checksum: 0E0CE651CB6F569FC3D9926B82033352;16674.
  ) 
 Here is how much of TeX's memory you used:
- 13552 strings out of 478918
- 251262 string characters out of 5866395
- 818680 words of memory out of 5000000
- 33132 multiletter control sequences out of 15000+600000
+ 13563 strings out of 478918
+ 251715 string characters out of 5866395
+ 818553 words of memory out of 5000000
+ 33141 multiletter control sequences out of 15000+600000
  428315 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,6n,103p,695b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (142 pages).
+Output written on bookdown-demo.pdf (134 pages).
