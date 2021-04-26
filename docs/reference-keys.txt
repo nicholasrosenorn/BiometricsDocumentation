@@ -21,7 +21,7 @@ code
 flow-diagrams-visualizations
 white-paper
 technical-report
-data-engineering-documentation
+data-engineering-fall-2020-documentation
 introduction-to-the-team
 semester-goals
 data-overview
@@ -41,7 +41,6 @@ data-engineering-spring-2021-documentation
 completing-the-pipeline
 reading-in-user-data-from-patient-table
 appending-user-data-to-sql-table
-automating-the-process
 automating-the-pipeline
 cronjob-for-mac-and-linux
 task-scheduler-windows
@@ -114,14 +113,15 @@ user-setting-section
 phone-app-documentation
 how-to-setup
 technologies-used
-app-description
+application-description
+create-account-page
 login-page
 home-page
 account-profile-page
 edit-profile-page
 questionnaire-page
 entries-page
-api-endpoints-how-app-frontend-and-nodejs-backend-communicate
+api-endpoints-how-applications-frontend-and-node.js-backend-communicate
 future-work-1
 creation-of-dummy-data-1
 why-do-we-need-dummy-data-1

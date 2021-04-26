@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Data Engineering Spring 2021 Documentation | Merck-Data Mine Documentation</title>
+  <meta name="description" content="A book for documenting the Merck-Data Mine team's work." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Data Engineering Spring 2021 Documentation | Merck-Data Mine Documentation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A book for documenting the Merck-Data Mine team's work." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Data Engineering Spring 2021 Documentation | Merck-Data Mine Documentation" />
+  
+  <meta name="twitter:description" content="A book for documenting the Merck-Data Mine team's work." />
+  
+
+<meta name="author" content="Merck and Data Mine Corporate Partnership Team" />
+
+
+<meta name="date" content="2021-04-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-engineering-fall-2020-documentation.html"/>
+<link rel="next" href="data-architects.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#team-contacts"><i class="fa fa-check"></i><b>1.1</b> Team Contacts</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html"><i class="fa fa-check"></i><b>2</b> Tips for Writing Great Documentation and Walkthroughs</a><ul>
+<li class="chapter" data-level="2.1" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#find-a-good-topic"><i class="fa fa-check"></i><b>2.1</b> Find a Good Topic</a></li>
+<li class="chapter" data-level="2.2" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#make-goals-and-audience-clear"><i class="fa fa-check"></i><b>2.2</b> Make Goals and Audience Clear</a></li>
+<li class="chapter" data-level="2.3" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#have-a-begining-middle-and-end"><i class="fa fa-check"></i><b>2.3</b> Have a Begining, Middle, and End</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="index.html"><a href="index.html#introduction"><i class="fa fa-check"></i><b>2.3.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.3.2" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#body"><i class="fa fa-check"></i><b>2.3.2</b> Body</a></li>
+<li class="chapter" data-level="2.3.3" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#conclusion"><i class="fa fa-check"></i><b>2.3.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#getting-feedback-and-iterate"><i class="fa fa-check"></i><b>2.4</b> Getting Feedback and Iterate</a></li>
+<li class="chapter" data-level="2.5" data-path="tips-for-writing-great-documentation-and-walkthroughs.html"><a href="tips-for-writing-great-documentation-and-walkthroughs.html#practice-practice-practice"><i class="fa fa-check"></i><b>2.5</b> Practice, Practice, Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html"><i class="fa fa-check"></i><b>3</b> Documentation Example - The Basics of R Markdown</a><ul>
+<li class="chapter" data-level="3.1" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#overview-of-r-markdown"><i class="fa fa-check"></i><b>3.1</b> Overview of R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#workflow"><i class="fa fa-check"></i><b>3.2</b> Workflow</a></li>
+<li class="chapter" data-level="3.3" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#opening-a-new-file"><i class="fa fa-check"></i><b>3.3</b> Opening a New File</a></li>
+<li class="chapter" data-level="3.4" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#helpful-syntax"><i class="fa fa-check"></i><b>3.4</b> Helpful Syntax</a></li>
+<li class="chapter" data-level="3.5" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#embed-code"><i class="fa fa-check"></i><b>3.5</b> Embed Code</a></li>
+<li class="chapter" data-level="3.6" data-path="documentation-example-the-basics-of-r-markdown.html"><a href="documentation-example-the-basics-of-r-markdown.html#wrapping-or-knitting-it-up"><i class="fa fa-check"></i><b>3.6</b> Wrapping (or knitting) it Up</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="documentation-template.html"><a href="documentation-template.html"><i class="fa fa-check"></i><b>4</b> Documentation Template</a><ul>
+<li class="chapter" data-level="4.1" data-path="documentation-template.html"><a href="documentation-template.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="documentation-template.html"><a href="documentation-template.html#code"><i class="fa fa-check"></i><b>4.2</b> Code</a></li>
+<li class="chapter" data-level="4.3" data-path="documentation-template.html"><a href="documentation-template.html#flow-diagrams-visualizations"><i class="fa fa-check"></i><b>4.3</b> Flow Diagrams / Visualizations</a></li>
+<li class="chapter" data-level="4.4" data-path="documentation-template.html"><a href="documentation-template.html#white-paper"><i class="fa fa-check"></i><b>4.4</b> White Paper</a></li>
+<li class="chapter" data-level="4.5" data-path="documentation-template.html"><a href="documentation-template.html#technical-report"><i class="fa fa-check"></i><b>4.5</b> Technical Report</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html"><i class="fa fa-check"></i><b>5</b> Data Engineering Fall 2020 Documentation</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#introduction-to-the-team"><i class="fa fa-check"></i><b>5.1</b> Introduction to the Team</a></li>
+<li class="chapter" data-level="5.2" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#semester-goals"><i class="fa fa-check"></i><b>5.2</b> Semester Goals</a></li>
+<li class="chapter" data-level="5.3" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#data-overview"><i class="fa fa-check"></i><b>5.3</b> Data Overview</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#fitbit-devices-vs.-apple-watch"><i class="fa fa-check"></i><b>5.3.1</b> Fitbit Devices vs. Apple Watch</a></li>
+<li class="chapter" data-level="5.3.2" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#data-collected-from-fitbit-devices"><i class="fa fa-check"></i><b>5.3.2</b> Data Collected from Fitbit Devices</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#scaling-the-framework"><i class="fa fa-check"></i><b>5.4</b> Scaling the Framework</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#multiple-users"><i class="fa fa-check"></i><b>5.4.1</b> Multiple Users</a></li>
+<li class="chapter" data-level="5.4.2" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#multiple-devices"><i class="fa fa-check"></i><b>5.4.2</b> Multiple Devices</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#scheduling-the-data-collection"><i class="fa fa-check"></i><b>5.5</b> Scheduling the Data Collection</a></li>
+<li class="chapter" data-level="5.6" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#collaborating-with-other-teams"><i class="fa fa-check"></i><b>5.6</b> Collaborating with other Teams</a></li>
+<li class="chapter" data-level="5.7" data-path="data-engineering-fall-2020-documentation.html"><a href="data-engineering-fall-2020-documentation.html#future-work"><i class="fa fa-check"></i><b>5.7</b> Future Work</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html"><i class="fa fa-check"></i><b>6</b> Data Engineering Spring 2021 Documentation</a><ul>
+<li class="chapter" data-level="6.1" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#completing-the-pipeline"><i class="fa fa-check"></i><b>6.1</b> Completing the Pipeline</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#reading-in-user-data-from-patient-table"><i class="fa fa-check"></i><b>6.1.1</b> Reading in user data from patient table</a></li>
+<li class="chapter" data-level="6.1.2" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#appending-user-data-to-sql-table"><i class="fa fa-check"></i><b>6.1.2</b> Appending user data to SQL table</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#automating-the-pipeline"><i class="fa fa-check"></i><b>6.2</b> Automating the Pipeline</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#cronjob-for-mac-and-linux"><i class="fa fa-check"></i><b>6.2.1</b> Cronjob (for Mac and Linux)</a></li>
+<li class="chapter" data-level="6.2.2" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#task-scheduler-windows"><i class="fa fa-check"></i><b>6.2.2</b> Task Scheduler (Windows)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#exploring-apple-healthkit-and-xcode"><i class="fa fa-check"></i><b>6.3</b> Exploring Apple HealthKit and XCode</a></li>
+<li class="chapter" data-level="6.4" data-path="data-engineering-spring-2021-documentation.html"><a href="data-engineering-spring-2021-documentation.html#thank-you-acknowledgements"><i class="fa fa-check"></i><b>6.4</b> Thank you &amp; Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-architects.html"><a href="data-architects.html"><i class="fa fa-check"></i><b>7</b> Data Architects</a><ul>
+<li class="chapter" data-level="7.1" data-path="data-architects.html"><a href="data-architects.html#what-is-a-database"><i class="fa fa-check"></i><b>7.1</b> What is a database?</a></li>
+<li class="chapter" data-level="7.2" data-path="data-architects.html"><a href="data-architects.html#how-to-create-the-database"><i class="fa fa-check"></i><b>7.2</b> How to create the database:</a></li>
+<li class="chapter" data-level="7.3" data-path="data-architects.html"><a href="data-architects.html#basic-sql-key"><i class="fa fa-check"></i><b>7.3</b> Basic SQL key:</a></li>
+<li class="chapter" data-level="7.4" data-path="data-architects.html"><a href="data-architects.html#mysql-script"><i class="fa fa-check"></i><b>7.4</b> MySQL Script:</a></li>
+<li class="chapter" data-level="7.5" data-path="data-architects.html"><a href="data-architects.html#how-to-connect-the-sql-database-to-aws"><i class="fa fa-check"></i><b>7.5</b> How to connect the SQL database to AWS:</a></li>
+<li class="chapter" data-level="7.6" data-path="data-architects.html"><a href="data-architects.html#how-to-load-dummy-data-into-mysql"><i class="fa fa-check"></i><b>7.6</b> How to load dummy data into mySQL:</a></li>
+<li class="chapter" data-level="7.7" data-path="data-architects.html"><a href="data-architects.html#database-creation-with-neo4j"><i class="fa fa-check"></i><b>7.7</b> Database Creation with Neo4j</a></li>
+<li class="chapter" data-level="7.8" data-path="data-architects.html"><a href="data-architects.html#inputting-dummy-data-into-fitbit-neo4j-database"><i class="fa fa-check"></i><b>7.8</b> Inputting Dummy Data into Fitbit Neo4j Database</a></li>
+<li class="chapter" data-level="7.9" data-path="data-architects.html"><a href="data-architects.html#challenges-with-creating-neo4j-database"><i class="fa fa-check"></i><b>7.9</b> Challenges with Creating Neo4j Database</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-visualization-team.html"><a href="data-visualization-team.html"><i class="fa fa-check"></i><b>8</b> Data visualization Team</a><ul>
+<li class="chapter" data-level="8.1" data-path="data-visualization-team.html"><a href="data-visualization-team.html#biometric-wearables"><i class="fa fa-check"></i><b>8.1</b> Biometric Wearables</a></li>
+<li class="chapter" data-level="8.2" data-path="data-visualization-team.html"><a href="data-visualization-team.html#purpose"><i class="fa fa-check"></i><b>8.2</b> Purpose</a></li>
+<li class="chapter" data-level="8.3" data-path="data-visualization-team.html"><a href="data-visualization-team.html#outcome"><i class="fa fa-check"></i><b>8.3</b> Outcome</a></li>
+<li class="chapter" data-level="8.4" data-path="data-visualization-team.html"><a href="data-visualization-team.html#significance"><i class="fa fa-check"></i><b>8.4</b> Significance</a></li>
+<li class="chapter" data-level="8.5" data-path="data-visualization-team.html"><a href="data-visualization-team.html#overview-of-data-visualization-team"><i class="fa fa-check"></i><b>8.5</b> Overview of Data visualization Team</a></li>
+<li class="chapter" data-level="8.6" data-path="data-visualization-team.html"><a href="data-visualization-team.html#previous-work-done-on-the-project"><i class="fa fa-check"></i><b>8.6</b> Previous Work Done on the project</a></li>
+<li class="chapter" data-level="8.7" data-path="data-visualization-team.html"><a href="data-visualization-team.html#team-members"><i class="fa fa-check"></i><b>8.7</b> Team Members</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="data-visualization-team.html"><a href="data-visualization-team.html#ahmed-ashraf-butt"><i class="fa fa-check"></i><b>8.7.1</b> Ahmed Ashraf Butt</a></li>
+<li class="chapter" data-level="8.7.2" data-path="data-visualization-team.html"><a href="data-visualization-team.html#pika-seth"><i class="fa fa-check"></i><b>8.7.2</b> Pika Seth</a></li>
+<li class="chapter" data-level="8.7.3" data-path="data-visualization-team.html"><a href="data-visualization-team.html#sharon-patta"><i class="fa fa-check"></i><b>8.7.3</b> Sharon Patta</a></li>
+<li class="chapter" data-level="8.7.4" data-path="data-visualization-team.html"><a href="data-visualization-team.html#surya-suresh"><i class="fa fa-check"></i><b>8.7.4</b> Surya Suresh</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="data-visualization-team.html"><a href="data-visualization-team.html#team-formation"><i class="fa fa-check"></i><b>8.8</b> Team formation</a></li>
+<li class="chapter" data-level="8.9" data-path="data-visualization-team.html"><a href="data-visualization-team.html#term-1-goals"><i class="fa fa-check"></i><b>8.9</b> Term 1 goals</a></li>
+<li class="chapter" data-level="8.10" data-path="data-visualization-team.html"><a href="data-visualization-team.html#visulization-1"><i class="fa fa-check"></i><b>8.10</b> Visulization 1</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="data-visualization-team.html"><a href="data-visualization-team.html#semester-1-code"><i class="fa fa-check"></i><b>8.10.1</b> Semester 1 Code</a></li>
+</ul></li>
+<li class="chapter" data-level="8.11" data-path="data-visualization-team.html"><a href="data-visualization-team.html#visulization-2"><i class="fa fa-check"></i><b>8.11</b> Visulization 2</a><ul>
+<li class="chapter" data-level="8.11.1" data-path="data-visualization-team.html"><a href="data-visualization-team.html#code-1"><i class="fa fa-check"></i><b>8.11.1</b> Code</a></li>
+</ul></li>
+<li class="chapter" data-level="8.12" data-path="data-visualization-team.html"><a href="data-visualization-team.html#term-2-goals"><i class="fa fa-check"></i><b>8.12</b> Term 2 goals</a></li>
+<li class="chapter" data-level="8.13" data-path="data-visualization-team.html"><a href="data-visualization-team.html#activity-progress-visualisation"><i class="fa fa-check"></i><b>8.13</b> Activity Progress Visualisation</a></li>
+<li class="chapter" data-level="8.14" data-path="data-visualization-team.html"><a href="data-visualization-team.html#average-statistics-visualization"><i class="fa fa-check"></i><b>8.14</b> Average Statistics Visualization</a></li>
+<li class="chapter" data-level="8.15" data-path="data-visualization-team.html"><a href="data-visualization-team.html#single-patient-data-dashboard"><i class="fa fa-check"></i><b>8.15</b> Single Patient Data Dashboard</a></li>
+<li class="chapter" data-level="8.16" data-path="data-visualization-team.html"><a href="data-visualization-team.html#combined-patient-data-dashboard"><i class="fa fa-check"></i><b>8.16</b> Combined Patient Data Dashboard</a><ul>
+<li class="chapter" data-level="8.16.1" data-path="data-visualization-team.html"><a href="data-visualization-team.html#single-patient-visualization-code"><i class="fa fa-check"></i><b>8.16.1</b> Single Patient Visualization Code</a></li>
+<li class="chapter" data-level="8.16.2" data-path="data-visualization-team.html"><a href="data-visualization-team.html#total-patients-visualization-code"><i class="fa fa-check"></i><b>8.16.2</b> Total Patients Visualization Code</a></li>
+</ul></li>
+<li class="chapter" data-level="8.17" data-path="data-visualization-team.html"><a href="data-visualization-team.html#critical-decisions"><i class="fa fa-check"></i><b>8.17</b> Critical decisions</a></li>
+<li class="chapter" data-level="8.18" data-path="data-visualization-team.html"><a href="data-visualization-team.html#technical-report-1"><i class="fa fa-check"></i><b>8.18</b> Technical Report</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="back-end-team.html"><a href="back-end-team.html"><i class="fa fa-check"></i><b>9</b> Back End Team</a><ul>
+<li class="chapter" data-level="9.1" data-path="back-end-team.html"><a href="back-end-team.html#creation-of-dummy-data"><i class="fa fa-check"></i><b>9.1</b> Creation of Dummy Data</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="back-end-team.html"><a href="back-end-team.html#why-do-we-need-dummy-data"><i class="fa fa-check"></i><b>9.1.1</b> Why do we need dummy data?</a></li>
+<li class="chapter" data-level="9.1.2" data-path="back-end-team.html"><a href="back-end-team.html#how-we-generated-dummy-data"><i class="fa fa-check"></i><b>9.1.2</b> How we generated dummy data?</a></li>
+<li class="chapter" data-level="9.1.3" data-path="back-end-team.html"><a href="back-end-team.html#how-to-run-the-scripts"><i class="fa fa-check"></i><b>9.1.3</b> How to run the scripts?</a></li>
+<li class="chapter" data-level="9.1.4" data-path="back-end-team.html"><a href="back-end-team.html#potential-improvements"><i class="fa fa-check"></i><b>9.1.4</b> Potential improvements</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="back-end-team.html"><a href="back-end-team.html#creating-a-connection-between-api-endpoints"><i class="fa fa-check"></i><b>9.2</b> Creating a connection between API Endpoints</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="back-end-team.html"><a href="back-end-team.html#list-of-api-end-points"><i class="fa fa-check"></i><b>9.2.1</b> List of API end-points:</a></li>
+<li class="chapter" data-level="9.2.2" data-path="back-end-team.html"><a href="back-end-team.html#what-framework-we-are-going-to-use"><i class="fa fa-check"></i><b>9.2.2</b> What framework we are going to use?</a></li>
+<li class="chapter" data-level="9.2.3" data-path="back-end-team.html"><a href="back-end-team.html#setting-up-sql-database-connection"><i class="fa fa-check"></i><b>9.2.3</b> Setting up SQL database connection:</a></li>
+<li class="chapter" data-level="9.2.4" data-path="back-end-team.html"><a href="back-end-team.html#design-of-the-routes"><i class="fa fa-check"></i><b>9.2.4</b> Design of the Routes</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="back-end-team.html"><a href="back-end-team.html#hosting-the-database-on-a-server"><i class="fa fa-check"></i><b>9.3</b> Hosting the database on a Server</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="back-end-team.html"><a href="back-end-team.html#issues-faced-with-hosting-a-database-on-scholar"><i class="fa fa-check"></i><b>9.3.1</b> Issues faced with hosting a database on Scholar:</a></li>
+<li class="chapter" data-level="9.3.2" data-path="back-end-team.html"><a href="back-end-team.html#work-around"><i class="fa fa-check"></i><b>9.3.2</b> Work around</a></li>
+<li class="chapter" data-level="9.3.3" data-path="back-end-team.html"><a href="back-end-team.html#how-we-proceeded"><i class="fa fa-check"></i><b>9.3.3</b> How we proceeded</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="back-end-team.html"><a href="back-end-team.html#adding-data-to-the-database"><i class="fa fa-check"></i><b>9.4</b> Adding data to the database</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="back-end-team.html"><a href="back-end-team.html#adding-a-csv-to-the-database"><i class="fa fa-check"></i><b>9.4.1</b> Adding a CSV to the database</a></li>
+<li class="chapter" data-level="9.4.2" data-path="back-end-team.html"><a href="back-end-team.html#post-information"><i class="fa fa-check"></i><b>9.4.2</b> POST information</a></li>
+<li class="chapter" data-level="9.4.3" data-path="back-end-team.html"><a href="back-end-team.html#patient-information-and-study-specific-data"><i class="fa fa-check"></i><b>9.4.3</b> Patient information and Study Specific Data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="back-end-team.html"><a href="back-end-team.html#firebase-and-login-system-for-the-phone-app"><i class="fa fa-check"></i><b>9.5</b> Firebase and Login System for the Phone App</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="front-end-team.html"><a href="front-end-team.html"><i class="fa fa-check"></i><b>10</b> Front End Team</a><ul>
+<li class="chapter" data-level="10.1" data-path="front-end-team.html"><a href="front-end-team.html#utilization-of-third-party-software"><i class="fa fa-check"></i><b>10.1</b> Utilization of Third Party Software</a></li>
+<li class="chapter" data-level="10.2" data-path="front-end-team.html"><a href="front-end-team.html#software-components"><i class="fa fa-check"></i><b>10.2</b> Software Components</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="front-end-team.html"><a href="front-end-team.html#pre-login-section"><i class="fa fa-check"></i><b>10.2.1</b> Pre-Login section</a></li>
+<li class="chapter" data-level="10.2.2" data-path="front-end-team.html"><a href="front-end-team.html#home-page-section"><i class="fa fa-check"></i><b>10.2.2</b> Home Page Section</a></li>
+<li class="chapter" data-level="10.2.3" data-path="front-end-team.html"><a href="front-end-team.html#question-response-section"><i class="fa fa-check"></i><b>10.2.3</b> Question Response Section</a></li>
+<li class="chapter" data-level="10.2.4" data-path="front-end-team.html"><a href="front-end-team.html#user-setting-section"><i class="fa fa-check"></i><b>10.2.4</b> User Setting Section</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html"><i class="fa fa-check"></i><b>11</b> Phone App Documentation</a><ul>
+<li class="chapter" data-level="11.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#how-to-setup"><i class="fa fa-check"></i><b>11.1</b> 1. How to Setup</a></li>
+<li class="chapter" data-level="11.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#technologies-used"><i class="fa fa-check"></i><b>11.2</b> 2. Technologies Used</a></li>
+<li class="chapter" data-level="11.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#application-description"><i class="fa fa-check"></i><b>11.3</b> 3. Application Description</a><ul>
+<li class="chapter" data-level="11.3.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#create-account-page"><i class="fa fa-check"></i><b>11.3.1</b> 3.1 Create Account Page</a></li>
+<li class="chapter" data-level="11.3.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#login-page"><i class="fa fa-check"></i><b>11.3.2</b> 3.2 Login Page</a></li>
+<li class="chapter" data-level="11.3.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#home-page"><i class="fa fa-check"></i><b>11.3.3</b> 3.3 Home Page</a></li>
+<li class="chapter" data-level="11.3.4" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#account-profile-page"><i class="fa fa-check"></i><b>11.3.4</b> 3.4 Account Profile Page</a></li>
+<li class="chapter" data-level="11.3.5" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#edit-profile-page"><i class="fa fa-check"></i><b>11.3.5</b> 3.5 Edit Profile Page</a></li>
+<li class="chapter" data-level="11.3.6" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#questionnaire-page"><i class="fa fa-check"></i><b>11.3.6</b> 3.6 Questionnaire Page</a></li>
+<li class="chapter" data-level="11.3.7" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#entries-page"><i class="fa fa-check"></i><b>11.3.7</b> 3.7 Entries Page</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#api-endpoints-how-applications-frontend-and-node.js-backend-communicate"><i class="fa fa-check"></i><b>11.4</b> 4. API endpoints (How Application's Frontend and Node.js Backend communicate)</a></li>
+<li class="chapter" data-level="11.5" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#future-work-1"><i class="fa fa-check"></i><b>11.5</b> 5. Future Work</a></li>
+<li class="chapter" data-level="11.6" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#creation-of-dummy-data-1"><i class="fa fa-check"></i><b>11.6</b> 6. Creation of Dummy Data</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#why-do-we-need-dummy-data-1"><i class="fa fa-check"></i><b>11.6.1</b> 6.1 Why do we need dummy data?</a></li>
+<li class="chapter" data-level="11.6.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#how-we-generated-dummy-data-1"><i class="fa fa-check"></i><b>11.6.2</b> 6.2 How we generated dummy data?</a></li>
+<li class="chapter" data-level="11.6.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#how-to-run-the-scripts-1"><i class="fa fa-check"></i><b>11.6.3</b> 6.3 How to run the scripts?</a></li>
+<li class="chapter" data-level="11.6.4" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#potential-improvements-1"><i class="fa fa-check"></i><b>11.6.4</b> 6.4 Potential improvements</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#creating-a-connection-between-api-endpoints-1"><i class="fa fa-check"></i><b>11.7</b> 7. Creating a connection between API Endpoints</a><ul>
+<li class="chapter" data-level="11.7.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#list-of-api-end-points-1"><i class="fa fa-check"></i><b>11.7.1</b> 7.1 List of API end-points:</a></li>
+<li class="chapter" data-level="11.7.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#what-framework-we-are-going-to-use-1"><i class="fa fa-check"></i><b>11.7.2</b> 7.2 What framework we are going to use?</a></li>
+<li class="chapter" data-level="11.7.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#setting-up-sql-database-connection-1"><i class="fa fa-check"></i><b>11.7.3</b> 7.3 Setting up SQL database connection:</a></li>
+<li class="chapter" data-level="11.7.4" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#design-of-the-routes-1"><i class="fa fa-check"></i><b>11.7.4</b> 7.4 Design of the Routes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#hosting-the-database-on-a-server-1"><i class="fa fa-check"></i><b>11.8</b> 8. Hosting the database on a Server</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#issues-faced-with-hosting-a-database-on-scholar-1"><i class="fa fa-check"></i><b>11.8.1</b> 8.1 Issues faced with hosting a database on Scholar:</a></li>
+<li class="chapter" data-level="11.8.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#work-around-1"><i class="fa fa-check"></i><b>11.8.2</b> 8.2 Work around</a></li>
+<li class="chapter" data-level="11.8.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#how-we-proceeded-1"><i class="fa fa-check"></i><b>11.8.3</b> 8.3 How we proceeded</a></li>
+</ul></li>
+<li class="chapter" data-level="11.9" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#adding-data-to-the-database-1"><i class="fa fa-check"></i><b>11.9</b> 9. Adding data to the database</a><ul>
+<li class="chapter" data-level="11.9.1" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#adding-a-csv-to-the-database-1"><i class="fa fa-check"></i><b>11.9.1</b> 9.1 Adding a CSV to the database</a></li>
+<li class="chapter" data-level="11.9.2" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#post-information-1"><i class="fa fa-check"></i><b>11.9.2</b> 9.2 POST information</a></li>
+<li class="chapter" data-level="11.9.3" data-path="phone-app-documentation.html"><a href="phone-app-documentation.html#patient-information-and-study-specific-data-1"><i class="fa fa-check"></i><b>11.9.3</b> 9.3 Patient information and Study Specific Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html"><i class="fa fa-check"></i><b>12</b> Fullstack Documentation Spring 2021</a><ul>
+<li class="chapter" data-level="12.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#sprint-1-0119---0215"><i class="fa fa-check"></i><b>12.1</b> Sprint 1 (01/19 - 02/15)</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website"><i class="fa fa-check"></i><b>12.1.1</b> Website:</a></li>
+<li class="chapter" data-level="12.1.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app"><i class="fa fa-check"></i><b>12.1.2</b> Phone App:</a></li>
+<li class="chapter" data-level="12.1.3" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-progress"><i class="fa fa-check"></i><b>12.1.3</b> Website Progress:</a></li>
+<li class="chapter" data-level="12.1.4" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app-progress"><i class="fa fa-check"></i><b>12.1.4</b> Phone App Progress:</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#sprint-2-0216---0301"><i class="fa fa-check"></i><b>12.2</b> Sprint 2 (02/16 - 03/01)</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-progress-1"><i class="fa fa-check"></i><b>12.2.1</b> Website Progress:</a></li>
+<li class="chapter" data-level="12.2.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app-progress-1"><i class="fa fa-check"></i><b>12.2.2</b> Phone App Progress:</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#sprint-3-0301---0314"><i class="fa fa-check"></i><b>12.3</b> Sprint 3 (03/01 - 03/14)</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-progress-2"><i class="fa fa-check"></i><b>12.3.1</b> Website Progress:</a></li>
+<li class="chapter" data-level="12.3.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app-progress-so-far"><i class="fa fa-check"></i><b>12.3.2</b> Phone App Progress so far:</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#sprint-3-0315---0329"><i class="fa fa-check"></i><b>12.4</b> Sprint 3 (03/15 - 03/29)</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-progress-so-far"><i class="fa fa-check"></i><b>12.4.1</b> Website Progress so far:</a></li>
+<li class="chapter" data-level="12.4.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app-progress-so-far-1"><i class="fa fa-check"></i><b>12.4.2</b> Phone App Progress so far:</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#sprint-4-0330---0412"><i class="fa fa-check"></i><b>12.5</b> Sprint 4 (03/30 - 04/12)</a><ul>
+<li class="chapter" data-level="12.5.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-1"><i class="fa fa-check"></i><b>12.5.1</b> Website:</a></li>
+<li class="chapter" data-level="12.5.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#phone-app-1"><i class="fa fa-check"></i><b>12.5.2</b> Phone App:</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#website-design"><i class="fa fa-check"></i><b>12.6</b> Website design</a><ul>
+<li class="chapter" data-level="12.6.1" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#choosing-a-framework"><i class="fa fa-check"></i><b>12.6.1</b> Choosing a Framework</a></li>
+<li class="chapter" data-level="12.6.2" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#scripts-explained"><i class="fa fa-check"></i><b>12.6.2</b> Scripts Explained</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="fullstack-documentation-spring-2021.html"><a href="fullstack-documentation-spring-2021.html#documentation-for-the-packages-we-used"><i class="fa fa-check"></i><b>12.7</b> Documentation for the packages we used:</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Merck-Data Mine Documentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-engineering-spring-2021-documentation" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Data Engineering Spring 2021 Documentation</h1>
+<div id="completing-the-pipeline" class="section level2">
+<h2><span class="header-section-number">6.1</span> Completing the Pipeline</h2>
+<p>In order to connect data collection process to the rest of the pipeline, it had to be able to read patient information and login credentials from the SQL database, as well as automatically append the collected biometric data to a database. In order to accomplish this, the PythonBot.py code had to be able to connect to SQL. This was done by first importing the necessary sqlachemy pacakges and then establishing a connection to our specific database.</p>
+<p>To import packages:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># using sqlalchemy</span>
+<span class="im">import</span> sqlalchemy <span class="im">as</span> sal
+<span class="im">from</span> sqlalchemy <span class="im">import</span> create_engine
+<span class="im">import</span> pandas <span class="im">as</span> pd</code></pre></div>
+<p>To establish connection to SQL database:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># establish connecttion URL</span>
+conn <span class="op">=</span> <span class="st">&quot;mysql+pymysql://</span><span class="sc">{0}</span><span class="st">:</span><span class="sc">{1}</span><span class="st">@</span><span class="sc">{2}</span><span class="st">:</span><span class="sc">{3}</span><span class="st">/</span><span class="sc">{4}</span><span class="st">&quot;</span>.<span class="bu">format</span>(
+    <span class="st">&#39;cb3i17t0aqn6a4ff&#39;</span>, <span class="st">&#39;e2l4k9zn24shcj42&#39;</span>, <span class="st">&#39;rnr56s6e2uk326pj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com&#39;</span>, <span class="st">&#39;3306&#39;</span>, <span class="st">&#39;lfry112yqr3k2dfr&#39;</span>)
+ 
+<span class="co"># create engine</span>
+engine <span class="op">=</span> sal.create_engine(conn)</code></pre></div>
+<p>If another SQL database is used in the future, please note that 'cb3i17t0aqn6a4ff' corresponds to 'username', 'e2l4k9zn24shcj42' corresponds to 'password', 'rnr56s6e2uk326pj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com' corresponds to 'address', '3306' corresponds to 'port', and 'lfry112yqr3k2dfr' corresponds to 'DB'. Change these values as appropriate in the code.</p>
+<div id="reading-in-user-data-from-patient-table" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> Reading in user data from patient table</h3>
+<p>Patient data was imported as a series of arrays. The SQL patient table was read in as df1, which was used to form lists of data corresponding to individual patient's emails, passwords, IDs, and usernames.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">df1 <span class="op">=</span> pd.read_sql_query(<span class="st">&quot;SELECT * FROM patient&quot;</span>, engine)
+emails <span class="op">=</span> []
+passwords <span class="op">=</span> []
+IDs <span class="op">=</span> []
+usernames <span class="op">=</span> []
+<span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(df1)):
+    emails.append(df1.email[i])
+    passwords.append(df1.fitbit_password[i])
+    IDs.append(df1.patient_id[i])
+    usernames.append(df1.username[i])</code></pre></div>
+<p>As was previously the case, this data was iterated through and plugged into the FitbitBot function.</p>
+</div>
+<div id="appending-user-data-to-sql-table" class="section level3">
+<h3><span class="header-section-number">6.1.2</span> Appending user data to SQL table</h3>
+<p>Once data was collected (collection functions can be found in <em>BiometricPrevious_getDevice_v2.py</em>), it needed to be appended to the SQL database. A new function was made to reformat the data to have the same column names as the SQL table.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> appendDataBase(DATA,ENGINE, USER, ID):
+    obj <span class="op">=</span> pd.DataFrame()
+   
+    obj[<span class="st">&#39;patient_id&#39;</span>] <span class="op">=</span> [ID]
+    obj[<span class="st">&#39;fbusername&#39;</span>] <span class="op">=</span> [USER]
+    obj[<span class="st">&#39;collection_date&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Date&quot;</span>)]
+    obj[<span class="st">&#39;steps&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Steps&quot;</span>)]
+    obj[<span class="st">&#39;floors_climbed&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Floors Climbed&quot;</span>)]
+    obj[<span class="st">&#39;total_miles&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Total Miles&quot;</span>)]
+    obj[<span class="st">&#39;lightly_active_miles&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Lightly Active Miles&quot;</span>)]
+    obj[<span class="st">&#39;moderately_active_miles&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Moderately Active Miles&quot;</span>)]
+    obj[<span class="st">&#39;very_active_miles&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Very Active Miles&quot;</span>)]
+    obj[<span class="st">&#39;sedentary_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Sedentary Minutes&quot;</span>)]
+    obj[<span class="st">&#39;lightly_active_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Lightly Active Minutes&quot;</span>)]
+    obj[<span class="st">&#39;fairly_active_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Fairly Active Minutes&quot;</span>)]
+    obj[<span class="st">&#39;very_active_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Very Active Minutes&quot;</span>)]
+    obj[<span class="st">&#39;hr30_100_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;HR 30-100 Minutes&quot;</span>)]
+    obj[<span class="st">&#39;hr100_140_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;HR 100-140 Minutes&quot;</span>)]
+    obj[<span class="st">&#39;hr140_170_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;HR 140-170 Minutes&quot;</span>)]
+    obj[<span class="st">&#39;hr170_220_minutes&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;HR 170-220 Minutes&quot;</span>)]
+    obj[<span class="st">&#39;average_resting_hr&#39;</span>] <span class="op">=</span> [DATA.get(<span class="st">&quot;Average Resting HR&quot;</span>)]
+    obj[<span class="st">&#39;bmi&#39;</span>] <span class="op">=</span> DATA.get(<span class="st">&quot;BMI&quot;</span>)
+    obj[<span class="st">&#39;sleep_efficiency&#39;</span>] <span class="op">=</span> DATA.get(<span class="st">&quot;Sleep Efficiency&quot;</span>)
+    obj[<span class="st">&#39;weight&#39;</span>] <span class="op">=</span> DATA.get(<span class="st">&quot;Weight&quot;</span>)
+    obj[<span class="st">&quot;minutes_asleep&quot;</span>] <span class="op">=</span> todaysData.get(<span class="st">&quot;Minutes Alseep&quot;</span>)
+ 
+    obj.to_sql(<span class="st">&quot;fitbit_data&quot;</span>, con<span class="op">=</span>ENGINE, if_exists<span class="op">=</span><span class="st">&#39;append&#39;</span>, index<span class="op">=</span> <span class="va">False</span>)
+   
+    <span class="cf">return</span>(<span class="va">None</span>)</code></pre></div>
+<p>In this function, the argument <em>DATA</em> is a dataframe returned from <em>biometric_previous_getDevice_v2.py</em>, <em>ENGINE</em> is the connection engine to the SQL database, and <em>USER</em> and <em>ID</em> correspond to the user's Fitbit username and Merck trial userID. The <em>to_sql</em> function at the end is responsible for exporting the reformatted data to the <em>&quot;fitbit_data&quot;</em> table in the SQL database. The <em>if_exists='append'</em> argument is responsible for appending to the database instead of overwriting it, and the <em>index=False</em> argument stops the code from creating the original indexing as a column in SQL.</p>
+<p>More documentation on .to_sql can be found here: <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html" class="uri">https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html</a></p>
+<p>In order to pass the userID and fitbit username to the SQL database, the FitbitBot function and function call had to be slightly altered.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> FitbitBot:
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, EMAIL, PASSWORD, DATE, usernames, ID):
+ 
+        <span class="co">#Both the Client ID and Client Secret come from when Fitbit site after registering an app</span>
+        CLIENT_ID <span class="op">=</span> <span class="st">&#39;22BH28&#39;</span> <span class="co">#Mine:&#39;22BKP3&#39;</span>
+        CLIENT_SECRET <span class="op">=</span> <span class="st">&#39;78a4838804c1ff0983591e69196b1c46&#39;</span> <span class="co">#Mine:&#39;1a42e97b6b4cc640572ae5cf10a7d0b0&#39;</span>
+        <span class="co">#Authorization Process</span>
+        <span class="co"># opens website</span>
+        server <span class="op">=</span> Oauth2.OAuth2Server(CLIENT_ID, CLIENT_SECRET)
+        <span class="co"># opens website</span>
+        server.browser_authorize(EMAIL, PASSWORD)
+        ACCESS_TOKEN <span class="op">=</span> <span class="bu">str</span>(server.fitbit.client.session.token[<span class="st">&#39;access_token&#39;</span>])
+        REFRESH_TOKEN <span class="op">=</span> <span class="bu">str</span>(server.fitbit.client.session.token[<span class="st">&#39;refresh_token&#39;</span>])
+        auth2_client <span class="op">=</span> fitbit.Fitbit(CLIENT_ID, CLIENT_SECRET, Oauth2<span class="op">=</span><span class="va">True</span>, access_token<span class="op">=</span>ACCESS_TOKEN,
+        refresh_token<span class="op">=</span>REFRESH_TOKEN)
+        BiometricPrev <span class="op">=</span> BiometricPrevious.FitbitModel1(auth2_client)
+        bioDict, biometricDF <span class="op">=</span> BiometricPrev.getBiometricData(DATE) <span class="co">#append to data frame</span>
+        title <span class="op">=</span> <span class="st">&#39;./CSV_Files/user&#39;</span> <span class="op">+</span> <span class="bu">str</span>(i) <span class="op">+</span> <span class="st">&#39;_&#39;</span> <span class="op">+</span> DATE <span class="op">+</span> <span class="st">&#39;.csv&#39;</span>
+        appendDataBase(bioDict,engine,usernames,ID)
+        <span class="bu">print</span>(<span class="st">&quot;Python Script Executed&quot;</span>)</code></pre></div>
+<p>usernames and ID arguments were added to the function. The appendDataBase function call was also added into the function, and BiometricPrev.getBiometricData(DATA) was slightly altered to return both a dictionary and a database.</p>
+<p>Since the function arguments were exanded, the function call also had to be adjusted to pass usernames[i] and IDs[i].</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">today <span class="op">=</span> <span class="bu">str</span>((datetime.datetime.now() <span class="op">-</span> datetime.timedelta(<span class="dv">1</span>)).strftime(<span class="st">&quot;%Y-%m-</span><span class="sc">%d</span><span class="st">&quot;</span>))
+<span class="co"># Run data extraction</span>
+<span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(emails)):
+    FitbitBot(emails[i], passwords[i], today, usernames[i], IDs[i])</code></pre></div>
+</div>
+</div>
+<div id="automating-the-pipeline" class="section level2">
+<h2><span class="header-section-number">6.2</span> Automating the Pipeline</h2>
+<p>Automating the process was done two different ways. One was done through Cronjob and is useful for UNIX (Mac, linux) operating systems. This was used while the code was on Scholar. However, Scholar had period cronjob wipes, which meant that the automated process had to continually be re-established (and that defeated the purpose!). As a result, the code stopped being run on Scholar and was moved onto the Merck E2C AWS server. This was Windows based, so Task Scheduler was used.</p>
+<div id="cronjob-for-mac-and-linux" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Cronjob (for Mac and Linux)</h3>
+<p>Open Terminal. To see a list of current cronjob, type the following:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">crontab <span class="op">-</span>l</code></pre></div>
+<p>To edit a crontab or edit an existing one:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">crontab <span class="op">-</span>e</code></pre></div>
+<p>Type <em>i</em> to enter INSERT mode. Enter your cronjob command. For the case of this project on scholar, the following was used:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">0</span> <span class="dv">1</span> <span class="op">*</span> <span class="op">*</span> <span class="op">*</span> cd <span class="op">/</span><span class="kw">class</span><span class="op">/</span>datamine<span class="op">/</span>corporate<span class="op">/</span>merck<span class="op">/</span>DataEngineers<span class="op">/</span>Fitbit <span class="op">&amp;&amp;</span> <span class="op">/</span><span class="kw">class</span><span class="op">/</span>datamine<span class="op">/</span>apps<span class="op">/</span>python<span class="op">/</span>f2020<span class="op">-</span>s2021<span class="op">/</span>env<span class="op">/</span><span class="bu">bin</span><span class="op">/</span>python3<span class="fl">.8</span> PythonBot.py</code></pre></div>
+<p>The first 5 characters are timing instructions. The first one (0) corresponds to the minute. The second (1) corresponds to the hour. The 3rd corresponds to the day of the month, then month, then day of the week. An asterisk indicates that the job will run for every value in those corresponding categories. As a result</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">0</span> <span class="dv">1</span> <span class="op">*</span> <span class="op">*</span> <span class="op">*</span> </code></pre></div>
+<p>will run everyday at 1am.</p>
+<p><em>cd</em> navigates to a file directory. <strong>Note</strong> that if your python functions are in PATH, you can navigate to your file directly before issuing the crontab -e command, in which case you can simply type:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">0</span> <span class="dv">1</span> <span class="op">*</span> <span class="op">*</span> <span class="op">*</span> PythonBot.py</code></pre></div>
+<p>However, since python is not currently in PATH on scholar, the path to both the desired code (PythonBot.py) and had to be indicated in the command.</p>
+<p>Type <em>:wq</em> to write the command and quit Insert mode. Type crontab -l in Terminal to confirm set up.</p>
+</div>
+<div id="task-scheduler-windows" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Task Scheduler (Windows)</h3>
+<p>Windows provides a GUI for their scheduling program. To open it, click on the microscope search icon in the bottom of the screen (or right click on the windows icon and select ‘search’) and type <em>Task Scheduler</em>. Open the application.</p>
+<p>In the <em>Actions</em> sidebar, click on <em>Create Task</em>. Name the program and navigate to the <em>Triggers</em> tab. The trigger tab is tells Windows how often to run the program. Add a new trigger by clicking on <em>New</em>. Specify how often to run the program. The current project was made to run everyday at 1 am, and this was accomplished by selecting <em>Daily</em>, adjusting the start time to 1am, and clicking <em>ok</em>.</p>
+<p><strong>Note</strong> The E2C instance is not based in EST time. Make sure that your entered time is actually your desired time.</p>
+<p>Now its time to tell the Task Scheduler what program to actually run. Click on the <em>Actions</em> tab and add a new action. Browse for the script to automate. Click <em>ok</em>. The <em>Conditions</em> and <em>Settings</em> tabs offer more customization, but are not needed for the purposes of this project. Click <em>ok</em> to save the task.</p>
+<p>The added ask should show up in the main page of the GUI. Confirm that it does and that its status is <em>Enabled</em>. If its status is <em>Disabled</em>, right click on the task and select <em>Enable</em>.</p>
+<p>The program is now ready to run automatically!</p>
+</div>
+</div>
+<div id="exploring-apple-healthkit-and-xcode" class="section level2">
+<h2><span class="header-section-number">6.3</span> Exploring Apple HealthKit and XCode</h2>
+<p>Our team decided to start looking into creating the data aquisition script for the Apple Watch. This led us to Apple HealthKit. HealthKit allows access to and the ability to share health and fitness data that is collected using an iPhone and/or Apple Watch. We explored the the documentation that Apple had to offer and began learning how to use HealthKit. To use HealthKit to access the user's health data, we had to begin learning the language Swift and the IDE, XCode The problem we quickly encountered was that this could only be fully explored on Apple devices. In addition to exploring HealthKit and XCode on our own, we also searched for resources that we could use to assist in developing the data aquisition script. A lot of what we found was able to read and write the data but not export the data. Our current plan is to utilize a code template that walks through the authentication and data collection process and then directly send the data to the AWS database.</p>
+<p>A few other options exist for collecting the data from the Apple Watch. React Native can be used to develop an IOS application to collect and store the data fron the watch. However, apple devices are still needed to build and deploy the application, and thus not providing much advantage over a Swift based application. Another method to collect the data could be to utilize Google Fit and the pre-existing Google API. This would require the user to download the Google Fit application on their phone and signing in, which creates an intermediary that wouldn't be necessary in the other implementations. In the end, these two other implementations were not used in favor of the Swift implementation.</p>
+</div>
+<div id="thank-you-acknowledgements" class="section level2">
+<h2><span class="header-section-number">6.4</span> Thank you &amp; Acknowledgements</h2>
+<p>We would like to thank our Merck Corporate Partners, TA, and all the Data Mine staff that have helped us throughout this semester.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-engineering-fall-2020-documentation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-architects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-Data_Engineers_Final_Focumentation.rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

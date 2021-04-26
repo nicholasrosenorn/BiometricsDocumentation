@@ -122,7 +122,7 @@
 
 \title{Merck-Data Mine Documentation}
 \author{Merck and Data Mine Corporate Partnership Team}
-\date{2021-04-21}
+\date{2021-04-26}
 
 \begin{document}
 \maketitle
@@ -497,8 +497,8 @@ This section is where teams can highlight the processes of their work.
 This is a more in depth look into what was accomplised during the sprint
 where teams should describe step by step development.
 
-\chapter{Data Engineering
-Documentation}\label{data-engineering-documentation}
+\chapter{Data Engineering Fall 2020
+Documentation}\label{data-engineering-fall-2020-documentation}
 
 \section{Introduction to the Team}\label{introduction-to-the-team}
 
@@ -512,20 +512,28 @@ experience to the data mine.
 Jennifer Leising: I am a 3rd year graduate student in Industrial
 Engineering. My research is focused on healthcare and data analytics,
 and I have experience working in Clinical trials for a large Pharma
-company. Eric Yap: I am sophomore majoring in data science and finance.
-Most of my classes have helped developed my Python and R skills, which
-are very transferable to the work I do in the data mine. Allison Hill: I
-am a senior majoring in electrical engineering. I have coding experience
-in various languages, including some Python and R which were used within
-this project. Joshua Kosnoff: I am a junior majoring in biomedical
-engineering. I perform research with the cancer research center, where I
-have previously learned Python for data management and basic analysis.
+company.
+
+Joshua Kosnoff: I am a junior majoring in biomedical engineering. I
+perform research with the cancer research center, where I have
+previously learned Python for data management and basic analysis.
+
+Allison Hill: I am a senior majoring in electrical engineering. I have
+coding experience in various languages, including some Python and R
+which were used within this project.
+
 Karthik Ravishankar: I am a freshman majoring in data science. I have
 learned Java in highschool and at Purdue and some Python which was self
-taught to contribute to the project. Pranav Anandarao: I am a sophomore
-majoring in computer engineering. I have experience in a few different
-programming languages, including Python. I also have previous experience
-working on clinical applications.
+taught to contribute to the project.
+
+Pranav Anandarao: I am a sophomore majoring in computer engineering. I
+have experience in a few different programming languages, including
+Python. I also have previous experience working on clinical
+applications.
+
+Eric Yap: I am sophomore majoring in data science and finance. Most of
+my classes have helped developed my Python and R skills, which are very
+transferable to the work I do in the data mine.
 
 \section{Semester Goals}\label{semester-goals}
 
@@ -555,32 +563,39 @@ from any device. We created the chart below to list the features
 available on each device. We found very similar data to be available on
 both devices.
 
-\begin{verbatim}
-            |                                       |Fitbit         |Apple Watch
-\end{verbatim}
-
----------------\textbar{}---------------------------------------\textbar{}---------------\textbar{}---------------
-Activity \textbar{}Steps \textbar{}X \textbar{}X \textbar{}Workouts
-\textbar{}X \textbar{}X \textbar{}Sit/Stand \textbar{}X* \textbar{}NA
-\textbar{}Flight Climbed \textbar{}X \textbar{}X \textbar{}Elevation
-\textbar{}X \textbar{}X \textbar{}Time spent in different activity
-levels\textbar{}X \textbar{}X \textbar{}Calories burned \textbar{}X
-\textbar{}X Sleep \textbar{}Asleep vs Awake \textbar{}X \textbar{}X
-\textbar{}Stages \textbar{}X \textbar{}NA Heart Rate \textbar{}Time
-spent in different heart ranges \textbar{}X \textbar{}3rd party apps
-\textbar{}Resting heart rate \textbar{}X \textbar{}X \textbar{}Walking
-Heartrate \textbar{}NA \textbar{}X \textbar{}Heart rate during activity
-\textbar{}X \textbar{}X \textbar{}Intraday Tracking \textbar{}5 sec
-\textbar{}10 min Nutrition \textbar{}Food log* \textbar{}X \textbar{}X
-\textbar{}Water log* \textbar{}X \textbar{}X Body/Weight \textbar{}BMI*
-\textbar{}X \textbar{}X \textbar{}Weight* \textbar{}X \textbar{}X
-Additional \textbar{}ECG \textbar{}Coming soon \textbar{}X
-\textbar{}Blood Oxygen \textbar{}X \textbar{}X \textbar{}Fall Detection
-\textbar{}X \textbar{}X \textbar{}Skin Thermometer \textbar{}X
-\textbar{}NA \textbar{}Ear Health \textbar{}NA \textbar{}X
-\textbar{}Stress Response \textbar{}X \textbar{}NA
----------------------------------------------------------------------------------------
-*Entered manually NA = Not Available
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#                |                                       |Fitbit         |Apple Watch}
+\CommentTok{# ---------------|---------------------------------------|---------------|---------------}
+\CommentTok{# Activity       |Steps                                  |X              |X}
+\CommentTok{#                |Workouts                               |X              |X}
+\CommentTok{#                |Sit/Stand                              |X*             |NA}
+\CommentTok{#                |Flight Climbed                         |X              |X}
+\CommentTok{#                |Elevation                              |X              |X}
+\CommentTok{#                |Time spent in different activity levels|X              |X}
+\CommentTok{#                |Calories burned                        |X              |X}
+\CommentTok{# Sleep          |Asleep vs Awake                        |X              |X}
+\CommentTok{#                |Stages                                 |X              |NA}
+\CommentTok{# Heart Rate     |Time spent in different heart ranges   |X              |3rd party apps}
+\CommentTok{#                |Resting heart rate                     |X              |X}
+\CommentTok{#                |Walking Heartrate                      |NA             |X}
+\CommentTok{#                |Heart rate during activity             |X              |X}
+\CommentTok{#                |Intraday Tracking                      |5 sec          |10 min}
+\CommentTok{# Nutrition      |Food log*                              |X              |X}
+\CommentTok{#                |Water log*                             |X              |X}
+\CommentTok{# Body/Weight    |BMI*                                   |X              |X}
+\CommentTok{#                |Weight*                                |X              |X}
+\CommentTok{# Additional     |ECG                                    |Coming soon    |X}
+\CommentTok{#                |Blood Oxygen                           |X              |X}
+\CommentTok{#                |Fall Detection                         |X              |X}
+\CommentTok{#                |Skin Thermometer                       |X              |NA}
+\CommentTok{#                |Ear Health                             |NA             |X}
+\CommentTok{#                |Stress Response                        |X              |NA}
+\CommentTok{# ---------------------------------------------------------------------------------------}
+\CommentTok{#    *Entered manually}
+\CommentTok{#    NA = Not Available}
+\end{Highlighting}
+\end{Shaded}
 
 With the Apple Watch, most data tracking is through the Health app and
 the files are exported as a .xml, which is difficult to read. However,
@@ -921,29 +936,28 @@ check if the data is NULL and automatically do this such as with the
 sleep data. However for data such as activity levels, the data gets
 input as a ``0'' instead and thus needs a check. Checks for some of the
 newer models have been implemented, along with a generic case. The table
-below shows the implemented models and their available data: \textbar{}
-\textbar{}Ionic \textbar{} Versa Lite \textbar{}Inspire \textbar{}Charge
-3 \textbar{}
----------------\textbar{}---------------------------------------\textbar{}--------------\textbar{}-------------\textbar{}-------------\textbar{}-------------\textbar{}
-Activity \textbar{}Steps \textbar{}X \textbar{}X \textbar{}X \textbar{}X
-\textbar{} \textbar{}Workouts \textbar{}X \textbar{}X \textbar{}
-\textbar{} \textbar{} \textbar{}Sit/Stand \textbar{}X \textbar{}X
-\textbar{} \textbar{} \textbar{} \textbar{}Flight Climbed \textbar{}X
-\textbar{} \textbar{} \textbar{} \textbar{} \textbar{}Elevation
-\textbar{}X \textbar{} \textbar{} \textbar{} \textbar{} \textbar{}Time
-spent in different activity levels\textbar{}X \textbar{}X \textbar{}
-\textbar{} \textbar{} \textbar{}Calories burned \textbar{}X \textbar{}X
-\textbar{} \textbar{} \textbar{} Sleep \textbar{}Asleep vs Awake
-\textbar{}X \textbar{}X \textbar{}X \textbar{}X \textbar{}
-\textbar{}Stages \textbar{}X \textbar{}X \textbar{} \textbar{}
-\textbar{} Heart Rate \textbar{}Time spent in different heart ranges
-\textbar{}X \textbar{}X \textbar{} \textbar{}X \textbar{}
-\textbar{}Resting heart rate \textbar{}X \textbar{}X \textbar{}
-\textbar{}X \textbar{} \textbar{}Walking Heartrate \textbar{}X
-\textbar{}X \textbar{} \textbar{}X \textbar{} \textbar{}Heart rate
-during activity \textbar{}X \textbar{}X \textbar{} \textbar{}X
-\textbar{}
------------------------------------------------------------------------------------------------------------------
+below shows the implemented models and their available data:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+ \CommentTok{#                |                                       |Ionic         | Versa Lite  |Inspire      |Charge 3     |}
+ \CommentTok{# ---------------|---------------------------------------|--------------|-------------|-------------|-------------|}
+ \CommentTok{# Activity       |Steps                                  |X             |X            |X            |X            |}
+ \CommentTok{#                |Workouts                               |X             |X            |             |             |}
+ \CommentTok{#                |Sit/Stand                              |X             |X            |             |             |}
+ \CommentTok{#                |Flight Climbed                         |X             |             |             |             |}
+ \CommentTok{#                |Elevation                              |X             |             |             |             |}
+ \CommentTok{#                |Time spent in different activity levels|X             |X            |             |             |}
+ \CommentTok{#                |Calories burned                        |X             |X            |             |             |}
+ \CommentTok{# Sleep          |Asleep vs Awake                        |X             |X            |X            |X            |}
+ \CommentTok{#                |Stages                                 |X             |X            |             |             |}
+ \CommentTok{# Heart Rate     |Time spent in different heart ranges   |X             |X            |             |X            |}
+ \CommentTok{#                |Resting heart rate                     |X             |X            |             |X            |}
+ \CommentTok{#                |Walking Heartrate                      |X             |X            |             |X            |}
+ \CommentTok{#                |Heart rate during activity             |X             |X            |             |X            |}
+ \CommentTok{# -----------------------------------------------------------------------------------------------------------------}
+\end{Highlighting}
+\end{Shaded}
 
 The following function is what is used to obtain the device model
 string:
@@ -1022,7 +1036,7 @@ Watch.
   Investigating the collection of data from the Apple Watch
 \end{enumerate}
 
-\section{Data Engineering Spring 2021
+\chapter{Data Engineering Spring 2021
 Documentation}\label{data-engineering-spring-2021-documentation}
 
 \section{Completing the Pipeline}\label{completing-the-pipeline}
@@ -1191,8 +1205,6 @@ be adjusted to pass usernames{[}i{]} and IDs{[}i{]}.
 \NormalTok{    FitbitBot(emails[i], passwords[i], today, usernames[i], IDs[i])}
 \end{Highlighting}
 \end{Shaded}
-
-\section{Automating the Process}\label{automating-the-process}
 
 \section{Automating the Pipeline}\label{automating-the-pipeline}
 
@@ -4029,22 +4041,33 @@ functions with one TouchableOpacity function so far to log the user out.
 
 \chapter{Phone App Documentation}\label{phone-app-documentation}
 
+Team members: Abhimanyu Agarwal, Xin Du, Anav Sharma
+
 \section{1. How to Setup}\label{how-to-setup}
+
+\textbf{Note: You will not be able to run the application until you
+finish all the setup steps below. These steps make sure that your
+frontend (React Native), backend (Node.js), and the two databases used
+(Firebase and Amazon S3) are interconnected correctly. Note: A global
+search of the word ``PUTYOURDATAHERE'' will help you find all the places
+where you need to add your own config info. A more detailed instruction
+is also presented below.}
 
 Once you are in the root folder of the project repo, type ``npm start''
 on the command line. The expo browser tool will open in your browser.
-Then, you can choose to run the app on browser (as a website), Android
-device, or Apple device. For the spring 2021 semester final version, the
-code works best on an Android device (you can either use an emulator or
-a real device), and it works mostly on website. We haven't had a chance
-to test it on Apple device.
+Then, you can choose to run the application on browser (as a website),
+Android device, or Apple device. For the spring 2021 semester final
+version, the code works best on an Android device (you can either use an
+emulator or a real device), and it works mostly on website. We haven't
+had a chance to test it on Apple device.
 
 In order to configure the frontend to work with your firebase
-authentication,correct credentials need to be put into ``config.js''
+authentication, correct credentials need to be put into ``config.js''
 file located in /src/FireBase. To work with your Amazon S3, change the
-corresponding data in the env.json file.
+AMAZON\_S3\_DOMAIN variable to your Amazon S3 URL in the env.json file.
+The API\_DOMAIN url is the URL of your backend.
 
-For the node.js backend, the root folder is at
+For the Node.js backend, the root folder is at
 /backend/biometricBackend. Once you navigate there, you can type ``node
 server.js'' to start the server on port 3000.
 
@@ -4052,87 +4075,165 @@ In order to configure the backend to work with your MySQL database,
 correct credentials need to be put into ``db.config.js'' file located in
 /backend/biometricBackend/app/config.
 
+In order to configure the backend to work with your Amazon S3, correct
+credentials need to be put into
+/backend/biometricBackend/app/controllers/image.controller.js. Some
+tutorials that might help you include
+\url{https://medium.com/@otoloye/uploading-files-to-aws-s3-using-nodejs-multer-mongodb-and-postman-part-1-de790b8131d4}.
+
 \section{2. Technologies Used}\label{technologies-used}
 
-The phone app frontend is built with React Native and Expo. There are
-two backends. One is firebase, and the other is Nodejs. Firebase is used
-for login authentication. User's email and password are stored in
-firebase. Whenever the user wants to login, their provided credentials
-are checked against the values stored in the firebase.
+The phone application Frontend is built with React-native and Expo CLI.
+Backend is supported by Firebase, AWS S3, mySQL and Node.js.
 
-Firebase is a Google based software designed for user authentication
-purposes. The codes upon which this app is built are independently
-developed by our team members. The data used to develop the app is
+Firebase is used for login authentication. User's email and password are
+stored in Firebase. Whenever the user wants to login, their provided
+credentials are checked against the values stored in the Firebase. The
+codes upon which this application is built are independently developed
+by our team members. The data used to develop the application is
 Biometric data collected currently only through Fitbit, though the goal
 is to expand the collection capability to be able to obtain Apple Watch
-data as well. This data is accessed through an external Merck API which
-is linked through an SCTP request. Because our app's users are patients
-and their information is very confidential, It is important to implement
-our login and authentication system securely. Instead of building a
-secure login system from scratch by ourselves, we chose to use a
-pre-existing login authentication solution--firebase. In firebase,
-users' passwords are first encrypted and then stored. Even if hackers
-successfully gain access to firebase's database, they still would not
-know the passwords because everything stored there is the encrypted
-version.
+data as well.
 
-The other backend is Nodejs. It is used to help the frontend communicate
-with the MySql database. It also helps the frontend store image to
-Amazon S3.
+This data is accessed through an external Merck API which is linked
+through an SCTP request. Our application's users are patients and their
+information is very confidential, It is important to implement our login
+and authentication system securely. Instead of building a secure login
+system from scratch by ourselves, we chose to use a pre-existing login
+authentication solution--firebase. In firebase, users' passwords are
+first encrypted and then stored. Even if hackers successfully gain
+access to firebase's database, they still would not know the passwords
+because everything stored there is the encrypted version.
 
-\section{3. App Description}\label{app-description}
+We use Amazon S3 to store all of our user and questionnaire images.
+Unlike MySQL, Amazon S3 provides us with a ready-to-use file system that
+is more efficient to store large data such as images.
 
-The app is divided into several different pages. Each page's description
-will be listed below: \#\#\# 3.1 Create Account Page When user uploads
-an image, the image is stored to Amazon S3 through Nodejs. The frontend
-would receive part of the url (a number) that it can use to display the
-image. For now, the image url is not stored into the database yet,
-although it's stored in the frontend as a state variable. Once the user
-fills all the inputs and click the button, all the data, along with the
-image url, will be stored into the database (as a new row in the patient
-table). At the same time, an user is created at firebase, which is later
-used for authentication.
+We use MySQL to store all the data other than images. The data schema of
+the two used tables for phone application are below:
+\includegraphics{./phone_app_doc_images/sql_patient_table.JPG}
+\includegraphics{./phone_app_doc_images/sql_phone_app_data_table.JPG}
+Information related to the data schema used in our MySQL database is in
+Data Architecture Team's document.
+
+Besides, our main backend is Node.js. It is used to help the Frontend
+communicate with the MySQL database. It also helps the frontend store
+image to Amazon S3 instance.
+
+\section{3. Application Description}\label{application-description}
+
+The application is divided into 7 main pages. The description for each
+page is listed below:
+
+\subsection{3.1 Create Account Page}\label{create-account-page}
+
+This page enables a user to build a new account by providing user
+personal information. Information gathered from this Frontend is stored
+using backend routes and models in mySQL database. One of the features
+of this page is that it enables the user to upload an image. This image
+is stored to Amazon S3 through Node.js. The Frontend would receive part
+of the url (a number) that it can use to display the image.
+
+For now, the image url is not stored into the database yet, although
+it's stored in the frontend as a state variable. Once the user fills all
+the inputs and click the button, all the data, along with the image url,
+will be stored into the database (as a new row in the patient table). At
+the same time, an user is created at firebase, which is later used for
+authentication.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/create_account_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.2 Login Page}\label{login-page}
 
-When user fills in the info and click the login button, two things
-happen. First, the credentials are checked against the firebase auth.
-Then, the credentials are also used to retrieve the unique patient id
-from the SQL database, which will be used later as the patient's
-identifier to grab corresponding data from the SQL database.
+When user fills in the information and clicks the login button, the
+following executions take place. First, the credentials are checked
+against the Firebase authorisation data. Then, the credentials are also
+used to retrieve the unique patient id from the SQL database, which is
+used as the patient's identifier to grab corresponding data from the SQL
+database.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/login_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.3 Home Page}\label{home-page}
 
-No communication with the backend happens on this page
+The Home Page provides the user to choose from multiple features of the
+application. This page has a series of options that enable the user to
+click pictures, upload pictures and also make new entries. While this
+page does not explicitly communicate with the backend of the
+application, it is crucial for full functioning of the application.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/home_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.4 Account Profile Page}\label{account-profile-page}
 
-Patient id is used to grab all the corresponding information from the
-SQL database and the info is displayed.
+This page displays all the user corresponding information which is
+fetched using the Patient id. This patient is instrumental to grab all
+the corresponding information from the SQL database.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/user_profile_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.5 Edit Profile Page}\label{edit-profile-page}
 
 Patient id is used to grab all the corresponding information from the
-SQL database and the info is displayed. The user can also modify the
-info and edit them in the SQL database. Once they edit it, the new info
-will be pulled again and displayed on the page.
+SQL database and the information is displayed. The user can also modify
+the information and edit them in the SQL database. Once they edit it,
+the new information will be pulled again and displayed on the page. This
+page also enables the user to click picture and send it across for
+further analysis. Along with the feature to click pictures, the user can
+also upload images from local storage here.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/edit_profile_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.6 Questionnaire Page}\label{questionnaire-page}
 
-This page is used to create or edit a new row in the phone\_app\_data
-table. If you enter this page from the home page, you are going to
-execute a POST request, thus creating a new row. If you enter this page
-from Entries page, you are going to execute a PUT request, thus
-modifying an existing row. Once you click the create/modify button, you
-will automatically go back to the home page.
+Consisting of series of questions, this page is used to create or edit a
+new row in the phone\_app\_data table. If you enter this page from the
+home page, you are going to execute a POST request, thus creating a new
+row. If you enter this page from Entries page, you are going to execute
+a PUT request, thus modifying an existing row. Once you click the
+create/modify button, you will automatically go back to the home page.
+
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/questionnaire_page.JPG}
+\caption{}
+\end{figure}
 
 \subsection{3.7 Entries Page}\label{entries-page}
 
-This page grabs all the rows with the current patient id in the
-phone\_app\_data table
+Displays the patient entry information. Each entry made by the user is
+displayed. The data is fetched from all the rows with the current
+patient id in the phone\_app\_data table.
 
-\section{4. API endpoints (how App frontend and Nodejs backend
-communicate)}\label{api-endpoints-how-app-frontend-and-nodejs-backend-communicate}
+\begin{figure}
+\centering
+\includegraphics{./phone_app_doc_images/entries_page.JPG}
+\caption{}
+\end{figure}
+
+\section{4. API endpoints (How Application's Frontend and Node.js
+Backend
+communicate)}\label{api-endpoints-how-applications-frontend-and-node.js-backend-communicate}
 
 \begin{longtable}[]{@{}lrrcrrrr@{}}
 \toprule
@@ -4338,8 +4439,16 @@ Anav (complete)\strut
 
 \section{5. Future Work}\label{future-work-1}
 
-We are planning to experiment using Xcode to develop an Apple version of
-the app.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  We are planning to experiment using Xcode to develop an Apple version
+  of the application.
+\item
+  We are planning to optimize the Front-end and add new features similar
+  to click pictures, making new entries and uploading pictures.
+\end{enumerate}
 
 \section{6. Creation of Dummy Data}\label{creation-of-dummy-data-1}
 
@@ -4379,15 +4488,11 @@ each data categories' own characteristics. Below are the fake data
 vs.~real data comparison graphs for other data categories.
 
 For basal data:\\
-\includegraphics[width=0.50000\textwidth]{./images/BasalData.png} For
-Dist data:\\
-\includegraphics[width=0.50000\textwidth]{./images/Dist Data.JPG} For
-Elev data:\\
-\includegraphics[width=0.50000\textwidth]{./images/Elev Data.JPG} For
-Heart data:\\
-\includegraphics[width=0.50000\textwidth]{./images/Heart Data.JPG} For
-Steps data:\\
-\includegraphics[width=0.50000\textwidth]{./images/Steps Data.JPG}
+\includegraphics{./phone_app_doc_images/BasalData.png} For Dist data:\\
+\includegraphics{./phone_app_doc_images/DistData.JPG} For Elev data:\\
+\includegraphics{./phone_app_doc_images/ElevData.JPG} For Heart data:\\
+\includegraphics{./phone_app_doc_images/HeartData.JPG} For Steps data:\\
+\includegraphics{./phone_app_doc_images/StepsData.JPG}
 
 \subsection{6.3 How to run the scripts?}\label{how-to-run-the-scripts-1}
 
